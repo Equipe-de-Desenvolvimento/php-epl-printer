@@ -1,0 +1,2 @@
+instalar o xamppp
+colocar esse arquivo em C:\xampp\htdocs
