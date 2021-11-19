@@ -4,9 +4,10 @@ header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Headers: content-type");
 $json_post = json_decode(file_get_contents("php://input"));
 
-$url = "https://stgclinica.com.br/teste";
+$url = "http://localhost/stg";
+$empresa_id = "1";
 
-$link_sistema =  $url."/autocomplete/imprimirEtiqueta/";
+$link_sistema =  $url."/autocomplete/imprimirEtiqueta/".$empresa_id;
 $curl = curl_init(); 
 curl_setopt_array($curl, array(
    CURLOPT_URL => $link_sistema,
